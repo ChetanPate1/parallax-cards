@@ -4,4 +4,5 @@
 
 ## License
 
-[MIT License](http://zenorocha.mit-license.org/) © Chetan Patel
+<!-- [MIT License](http://zenorocha.mit-license.org/) -->
+© Chetan Patel
