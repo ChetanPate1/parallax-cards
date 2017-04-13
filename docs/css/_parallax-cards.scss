@@ -18,24 +18,14 @@ p{
   color: #38393e;
 }
 
-.card-container{
-  @include perspective(500px);
-  @include perspective-origin(50%, 50%);
-}
-
 .card {
   min-height: 500px;
   max-width: 350px;
-  transform-style: preserve-3d;
   background-color: white;
   position: relative;
   width: 100%;
   margin: 15px auto;
   border-radius: 9px;
-  -webkit-transition: -webkit-transform 250ms ease-out;
-  -moz-transition: -moz-transform 250ms ease-out;
-  -ms-transition: -ms-transform 250ms ease-out;
-  transition: transform 250ms ease-out;
 
   .content {
     position: absolute;

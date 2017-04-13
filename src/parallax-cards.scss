@@ -7,14 +7,14 @@
 @mixin create-card-space($card-name, $wrapper) {
   //3D space wrapper
   #{$wrapper}{
-    @include prefix('perspective', '500px');
-    @include prefix('perspective-origin', '50% 50%');
+    @include prefix('perspective', 500px);
+    @include prefix('perspective-origin', 50% 50%);
   }
 
   //Your card
   #{$card-name}{
     transform-style: preserve-3d;
-    @include prefix('transition', 'transform 250ms ease-out');
+    @include prefix('transition', transform 250ms ease-out);
   }
 }
 

@@ -16,31 +16,14 @@ p {
   line-height: 24px;
   color: #38393e; }
 
-.card-container {
-  -webkit-perspective: 500px;
-  -moz-perspective: 500px;
-  -ms-perspective: 500px;
-  -o-perspective: 500px;
-  perspective: 500px;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  -ms-perspective-origin: 50% 50%;
-  -o-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%; }
-
 .card {
   min-height: 500px;
   max-width: 350px;
-  transform-style: preserve-3d;
   background-color: white;
   position: relative;
   width: 100%;
   margin: 15px auto;
-  border-radius: 9px;
-  -webkit-transition: -webkit-transform 250ms ease-out;
-  -moz-transition: -moz-transform 250ms ease-out;
-  -ms-transition: -ms-transform 250ms ease-out;
-  transition: transform 250ms ease-out; }
+  border-radius: 9px; }
   .card .content {
     position: absolute;
     bottom: 0;

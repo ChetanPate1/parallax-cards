@@ -59,7 +59,7 @@ module.exports = function( grunt ) {
 			dist: {
 				options:{
 					sourcemap: 'none',
-					noCache: 'false'
+					noCache: false
 				},
 				files: {
 					'dist/parallax-cards.css': 'src/parallax-cards.scss'
