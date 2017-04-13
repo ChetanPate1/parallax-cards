@@ -1,4 +1,5 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   background-color: #e7e9f1;
 }
 h1{
@@ -8,6 +9,10 @@ h1{
 h2, h3, h4, h5, h6{
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+}
+
+.margin-bottom-50px{
+  margin-bottom: 50px;
 }
 
 p{
@@ -36,13 +41,12 @@ p{
     background-color: rgba(255, 255, 255, 0.95);
     width: 100%;
     margin: auto;
-    height: 250px;
+    height: 190px;
     border-radius: 0 0 9px 9px;
   }
 
   p{
-    padding: 0 15px;
-    @include transforms(translateZ(30px));
+    padding: 0 5px;
   }
 
   img{
@@ -51,30 +55,34 @@ p{
 
   h2{
     color: white;
-    font-weight: bold;
+    font-weight: 100;
     position: absolute;
     top: 25px;
     left: 35px;
-    @include transforms(translateZ(50px));
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.53);
+    @include transforms(translateZ(70px));
   }
 }
 
 .rated{
-  margin-bottom: 20px;
-  float: right;
-  height: 50px;
-  width: 50px;
+  z-index: 300;
+  position: absolute;
+  right: 20px;
+  top: -28px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  color: #636468;
-  border: 3px solid #636468;
-  background-color: #ffffff;
-  @include transforms(translateZ(60px));
+  border: 3px solid #fefefe;
+  background-color: rgba(69, 13, 13, 0.71);
+  @include transforms(translateZ(30px));
 
   h3{
-    font-size: 22px;
+    font-weight: 100;
+    font-size: 23px;
     margin: 0;
     text-align: center;
-    line-height: 45px;
+    line-height: 54px;
+    color: #f5f5f5;
   }
 }
 
@@ -88,16 +96,43 @@ p{
   font-size: 14px;
   color: #a5a6a8;
   margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0 5px;
+  margin-top: 6px;
   @include transforms(translateZ(20px));
 }
 
 .rating{
+  z-index: 300;
+  position: absolute;
+  left: 20px;
+  top: -35px;
   height: 20px;
   width: 115px;
   background: url("../img/star-sprite.png") no-repeat 0 0;
-  @include transforms(translateZ(40px));
+  @include transforms(translateZ(35px));
 
   &.five{
     background-position: 0 -97px;
+  }
+}
+
+.card-lg{
+  width: 100%;
+  min-height: 500px;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 250ms ease-out;
+  -ms-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  border: 3px dashed #f9f9f9;
+  position: relative;
+
+  h2{
+    position: absolute;
+    top: 50%;
+    @include transforms(translateY(-50%));
+    margin: auto;
+    text-align: center;
+    width: 100%;
   }
 }

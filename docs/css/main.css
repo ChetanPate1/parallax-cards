@@ -1,4 +1,5 @@
 body {
+  font-family: 'Open Sans', sans-serif;
   background-color: #e7e9f1; }
 
 h1 {
@@ -8,6 +9,9 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800; }
+
+.margin-bottom-50px {
+  margin-bottom: 50px; }
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -33,48 +37,47 @@ p {
     background-color: rgba(255, 255, 255, 0.95);
     width: 100%;
     margin: auto;
-    height: 250px;
+    height: 190px;
     border-radius: 0 0 9px 9px; }
   .card p {
-    padding: 0 15px;
-    -webkit-transform: translateZ(30px);
-    -moz-transform: translateZ(30px);
-    -ms-transform: translateZ(30px);
-    -o-transform: translateZ(30px);
-    transform: translateZ(30px); }
+    padding: 0 5px; }
   .card img {
     width: 100%; }
   .card h2 {
     color: white;
-    font-weight: bold;
+    font-weight: 100;
     position: absolute;
     top: 25px;
     left: 35px;
-    -webkit-transform: translateZ(50px);
-    -moz-transform: translateZ(50px);
-    -ms-transform: translateZ(50px);
-    -o-transform: translateZ(50px);
-    transform: translateZ(50px); }
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.53);
+    -webkit-transform: translateZ(70px);
+    -moz-transform: translateZ(70px);
+    -ms-transform: translateZ(70px);
+    -o-transform: translateZ(70px);
+    transform: translateZ(70px); }
 
 .rated {
-  margin-bottom: 20px;
-  float: right;
-  height: 50px;
-  width: 50px;
+  z-index: 300;
+  position: absolute;
+  right: 20px;
+  top: -28px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  color: #636468;
-  border: 3px solid #636468;
-  background-color: #ffffff;
-  -webkit-transform: translateZ(60px);
-  -moz-transform: translateZ(60px);
-  -ms-transform: translateZ(60px);
-  -o-transform: translateZ(60px);
-  transform: translateZ(60px); }
+  border: 3px solid #fefefe;
+  background-color: rgba(69, 13, 13, 0.71);
+  -webkit-transform: translateZ(30px);
+  -moz-transform: translateZ(30px);
+  -ms-transform: translateZ(30px);
+  -o-transform: translateZ(30px);
+  transform: translateZ(30px); }
   .rated h3 {
-    font-size: 22px;
+    font-weight: 100;
+    font-size: 23px;
     margin: 0;
     text-align: center;
-    line-height: 45px; }
+    line-height: 54px;
+    color: #f5f5f5; }
 
 .rating, .length {
   float: left;
@@ -85,6 +88,9 @@ p {
   font-size: 14px;
   color: #a5a6a8;
   margin-bottom: 10px;
+  font-weight: bold;
+  padding: 0 5px;
+  margin-top: 6px;
   -webkit-transform: translateZ(20px);
   -moz-transform: translateZ(20px);
   -ms-transform: translateZ(20px);
@@ -92,15 +98,40 @@ p {
   transform: translateZ(20px); }
 
 .rating {
+  z-index: 300;
+  position: absolute;
+  left: 20px;
+  top: -35px;
   height: 20px;
   width: 115px;
   background: url("../img/star-sprite.png") no-repeat 0 0;
-  -webkit-transform: translateZ(40px);
-  -moz-transform: translateZ(40px);
-  -ms-transform: translateZ(40px);
-  -o-transform: translateZ(40px);
-  transform: translateZ(40px); }
+  -webkit-transform: translateZ(35px);
+  -moz-transform: translateZ(35px);
+  -ms-transform: translateZ(35px);
+  -o-transform: translateZ(35px);
+  transform: translateZ(35px); }
   .rating.five {
     background-position: 0 -97px; }
+
+.card-lg {
+  width: 100%;
+  min-height: 500px;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 250ms ease-out;
+  -ms-transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  border: 3px dashed #f9f9f9;
+  position: relative; }
+  .card-lg h2 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+    text-align: center;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

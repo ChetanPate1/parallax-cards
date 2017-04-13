@@ -9,25 +9,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 	<body>
-		<div class="container">
-			<h1>Parallax Cards</h1>
+		<div class="container margin-bottom-50px">
 			 <div class="col-xs-12 col-sm-6 col-md-4">
 				  <div class="card-container">
 					   <div class="card" style="background: url(img/1.jpg) no-repeat 50% 0; background-size: cover;">
 
 							 <h2>The Great Wall</h2>
 							 <div class="content">
-								  <div class="row">
-										<div class="col-xs-7">
-											 <div class="length">103mins</div>
-											 <div class="rating five"></div>
-										</div>
-										<div class="col-xs-5">
-											 <div class="rated">
-												  <h3>12A</h3>
-											 </div>
-										</div>
+								  <div class="rating five"></div>
+								  <div class="rated">
+									  <h3>12A</h3>
 								  </div>
+								  <div class="length">103mins</div>
 								  <p>European mercenaries searching for black powder become embroiled in the defense of the Great Wall of China against a horde of monstrous creatures.</p>
 							 </div>
 					   </div>
@@ -40,17 +33,13 @@
 							 <h2>Logan</h2>
 							 <div class="content">
 								  <div class="row">
-										<div class="col-xs-7">
-											 <div class="length">120mins</div>
-											 <div class="rating five"></div>
-										</div>
-										<div class="col-xs-5">
-											 <div class="rated">
-												  <h3>15</h3>
-											 </div>
+										<div class="rating five"></div>
+										<div class="rated">
+											 <h3>15</h3>
 										</div>
 								  </div>
-								  <p>In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world and his legacy are up-ended when...</p>
+								  <div class="length">120mins</div>
+								  <p>In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world...</p>
 							 </div>
 					   </div>
 				  </div>
@@ -61,22 +50,28 @@
 					   <div class="card" style="background: url(img/3.jpg) no-repeat 50% 0; background-size: cover;">
 							 <h2>Split</h2>
 							 <div class="content">
-								  <div class="row">
-										<div class="col-xs-7">
-											 <div class="length">117mins</div>
-											 <div class="rating five"></div>
-										</div>
-										<div class="col-xs-5">
-											 <div class="rated">
-												  <h3>15</h3>
-											 </div>
-										</div>
-								  </div>
+								 <div class="rating five"></div>
+								 <div class="rated">
+									  <h3>15</h3>
+								 </div>
+								  <div class="length">117mins</div>
 								  <p>Three girls are kidnapped by a man with a diagnosed 23 distinct personalities, and must try and escape before the apparent emergence of a frightful new 24th.</p>
 							 </div>
 					   </div>
 				  </div>
 			 </div>
+		</div>
+
+		<div class="container">
+			<div class="col-xs-12">
+				 <div class="card-container">
+					  <div class="card-lg">
+
+						   <h2>Coming soon</h2>
+
+					  </div>
+				 </div>
+			</div>
 		</div>
 	</body>
 
@@ -85,7 +80,7 @@
 	<script>
 	$( function() {
 		$( '.card' ).parallaxCards( {
-			tolerance: 40
+			tolerance: 30
 		} );
 	} );
 	</script>
