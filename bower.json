@@ -1,0 +1,23 @@
+{
+  "name": "Parallax-Cards",
+  "license": "MIT",
+  "authors": [
+    "Chetan Patel"
+  ],
+  "description": "",
+  "homepage": "",
+  "keywords": [
+    "plugin",
+    "parallax cards",
+    "jquery-plugin",
+  ],
+  "main": "src/parallax-cards.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}
