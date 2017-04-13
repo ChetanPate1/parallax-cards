@@ -1,0 +1,123 @@
+body {
+  background-color: #e7e9f1; }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #38393e; }
+
+.card-container {
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+  -ms-perspective: 500px;
+  -o-perspective: 500px;
+  perspective: 500px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%; }
+
+.card {
+  min-height: 500px;
+  max-width: 350px;
+  transform-style: preserve-3d;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  margin: 15px auto;
+  border-radius: 9px;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  -moz-transition: -moz-transform 250ms ease-out;
+  -ms-transition: -ms-transform 250ms ease-out;
+  transition: transform 250ms ease-out; }
+  .card .content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    border-radius: 0 0 9px 9px; }
+  .card p {
+    padding: 0 15px;
+    -webkit-transform: translateZ(30px);
+    -moz-transform: translateZ(30px);
+    -ms-transform: translateZ(30px);
+    -o-transform: translateZ(30px);
+    transform: translateZ(30px); }
+  .card img {
+    width: 100%; }
+  .card h2 {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    -webkit-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+    -o-transform: translateZ(50px);
+    transform: translateZ(50px); }
+
+.rated {
+  margin-bottom: 20px;
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #636468;
+  border: 3px solid #636468;
+  background-color: #ffffff;
+  -webkit-transform: translateZ(60px);
+  -moz-transform: translateZ(60px);
+  -ms-transform: translateZ(60px);
+  -o-transform: translateZ(60px);
+  transform: translateZ(60px); }
+  .rated h3 {
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    line-height: 45px; }
+
+.rating, .length {
+  float: left;
+  width: 100%;
+  display: block; }
+
+.length {
+  font-size: 14px;
+  color: #a5a6a8;
+  margin-bottom: 10px;
+  -webkit-transform: translateZ(20px);
+  -moz-transform: translateZ(20px);
+  -ms-transform: translateZ(20px);
+  -o-transform: translateZ(20px);
+  transform: translateZ(20px); }
+
+.rating {
+  height: 20px;
+  width: 115px;
+  background: url("../img/star-sprite.png") no-repeat 0 0;
+  -webkit-transform: translateZ(40px);
+  -moz-transform: translateZ(40px);
+  -ms-transform: translateZ(40px);
+  -o-transform: translateZ(40px);
+  transform: translateZ(40px); }
+  .rating.five {
+    background-position: 0 -97px; }
+
+/*# sourceMappingURL=main.css.map */

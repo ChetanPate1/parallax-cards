@@ -1,0 +1,13 @@
+.card-container {
+  -webkit-perspective: "500px";
+  -ms-perspective: "500px";
+  perspective: "500px";
+  -webkit-perspective-origin: "50% 50%";
+  -ms-perspective-origin: "50% 50%";
+  perspective-origin: "50% 50%"; }
+
+.card {
+  transform-style: preserve-3d;
+  -webkit-transition: "transform 250ms ease-out";
+  -ms-transition: "transform 250ms ease-out";
+  transition: "transform 250ms ease-out"; }

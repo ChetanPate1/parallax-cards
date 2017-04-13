@@ -1,0 +1,23 @@
+@mixin prefix($property, $value){
+  -webkit-#{$property}: $value;
+  -ms-#{$property}: $value;
+  #{$property}: $value;
+}
+
+@mixin create-card-space($card-name, $wrapper) {
+  //3D space wrapper
+  #{$wrapper}{
+    transform-style: preserve-3d;
+    @include prefix('perspective', '500px');
+    @include prefix('perspective-origin', '50% 50%');
+  }
+
+  //Your card
+  #{$card-name}{
+    transform-style: preserve-3d;
+    @include prefix('transition', 'transform 250ms ease-out');
+  }
+}
+
+//Make custom named markup
+@include create-card-space('.card', '.card-container');
