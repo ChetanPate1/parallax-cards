@@ -15,7 +15,6 @@ p{
   color: #38393e;
 }
 
-
 .card-container{
   transform-style: preserve-3d;
   @include perspective(500px);
@@ -66,8 +65,6 @@ p{
     @include transforms(translateZ(50px));
   }
 }
-
-
 
 .rated{
   margin-bottom: 20px;
