@@ -1,16 +1,28 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #e7e9f1; }
+  background-color: #f2f6fa; }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 100; }
 
+.page-header {
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  margin: 0; }
+  .page-header h1 {
+    font-weight: 100;
+    margin: 90px 0 40px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+
 h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800; }
 
-.margin-bottom-50px {
+.margin-bottom-50 {
   margin-bottom: 50px; }
 
 p {
@@ -34,12 +46,13 @@ p {
     right: 0;
     left: 0;
     padding: 15px 25px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(46, 46, 46, 0.95);
     width: 100%;
     margin: auto;
     height: 190px;
     border-radius: 0 0 9px 9px; }
   .card p {
+    color: #f5f5f5;
     padding: 0 5px; }
   .card img {
     width: 100%; }
@@ -49,7 +62,7 @@ p {
     position: absolute;
     top: 25px;
     left: 35px;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.53);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.53);
     -webkit-transform: translateZ(70px);
     -moz-transform: translateZ(70px);
     -ms-transform: translateZ(70px);
@@ -65,12 +78,12 @@ p {
   width: 60px;
   border-radius: 50%;
   border: 3px solid #fefefe;
-  background-color: rgba(69, 13, 13, 0.71);
-  -webkit-transform: translateZ(30px);
-  -moz-transform: translateZ(30px);
-  -ms-transform: translateZ(30px);
-  -o-transform: translateZ(30px);
-  transform: translateZ(30px); }
+  background-color: rgba(49, 49, 48, 0.7);
+  -webkit-transform: translateZ(35px);
+  -moz-transform: translateZ(35px);
+  -ms-transform: translateZ(35px);
+  -o-transform: translateZ(35px);
+  transform: translateZ(35px); }
   .rated h3 {
     font-weight: 100;
     font-size: 23px;
@@ -120,7 +133,7 @@ p {
   -webkit-transition: transform 250ms ease-out;
   -ms-transition: transform 250ms ease-out;
   transition: transform 250ms ease-out;
-  border: 3px dashed #f9f9f9;
+  border: 3px dashed rgba(46, 46, 46, 0.95);
   position: relative; }
   .card-lg h2 {
     position: absolute;
