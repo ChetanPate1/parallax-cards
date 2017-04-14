@@ -1,6 +1,5 @@
 # Parallax Cards
-Demos speak louder than words: In Progress
-<!-- [View]() -->
+Demos speak louder than words: [Demo](https://chetanpate1.github.io/parallax-cards/)
 
 ## Motivation
 I was inspired by Apple TVs UI, the way the user can swipe over the remote to shimmer the card that was selected.
