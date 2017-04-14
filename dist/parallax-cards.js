@@ -9,9 +9,9 @@
 
 ;( function( $, window, document, undefined ) {
 
-	"use strict";
+	'use strict';
 
-		var pluginName = "parallaxCards",
+		var pluginName = 'parallaxCards',
 			defaults = {
 				tolerance: 30
 			};
@@ -73,7 +73,7 @@
 				if (this.settings.tolerance < 5){
 					this.settings.tolerance = 5;
 				}
-				
+
 				if (this.settings.tolerance < 100){
 					this.settings.tolerance = 100;
 				}
@@ -84,8 +84,8 @@
 		// preventing against multiple instantiations
 		$.fn[ pluginName ] = function( options ) {
 			return this.each( function() {
-				if ( !$.data( this, "plugin_" + pluginName ) ) {
-					$.data( this, "plugin_" +
+				if ( !$.data( this, 'plugin_' + pluginName ) ) {
+					$.data( this, 'plugin_' +
 						pluginName, new Plugin( this, options ) );
 				}
 			} );

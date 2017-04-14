@@ -31,51 +31,51 @@
 			typeof $fixture.defaultPluginName().on,
 			"function",
 			"'on' function must exist after plugin call" );
-	} );
-
-	QUnit.test( "caches plugin instance", function( assert ) {
-		$fixture.defaultPluginName();
-		assert.ok(
-			$fixture.data( "plugin_defaultPluginName" ),
-			"has cached it into a jQuery data"
-		);
-	} );
-
-	QUnit.test( "enable custom config", function( assert ) {
-		$fixture.defaultPluginName( {
-			foo: "bar"
 		} );
 
-		var pluginData = $fixture.data( "plugin_defaultPluginName" );
+		QUnit.test( "caches plugin instance", function( assert ) {
+			$fixture.defaultPluginName();
+			assert.ok(
+				$fixture.data( "plugin_defaultPluginName" ),
+				"has cached it into a jQuery data"
+			);
+		} );
 
-		assert.deepEqual(
-			pluginData.settings,
-			{
-				propertyName: "value",
+		QUnit.test( "enable custom config", function( assert ) {
+			$fixture.defaultPluginName( {
 				foo: "bar"
-			},
-			"extend plugin settings"
-		);
+			} );
 
-	} );
+			var pluginData = $fixture.data( "plugin_defaultPluginName" );
 
-	QUnit.test( "changes the element text", function( assert ) {
-		$fixture.defaultPluginName();
+			assert.deepEqual(
+				pluginData.settings,
+				{
+					propertyName: "value",
+					foo: "bar"
+				},
+				"extend plugin settings"
+			);
 
-		assert.equal( $fixture.text(), "jQuery Boilerplate" );
-	} );
+		} );
 
-	QUnit.test(
-		"has #yourOtherFunction working as expected",
-		function( assert ) {
+		QUnit.test( "changes the element text", function( assert ) {
 			$fixture.defaultPluginName();
 
-			var instance = $fixture.data( "plugin_defaultPluginName" ),
+			assert.equal( $fixture.text(), "jQuery Boilerplate" );
+		} );
+
+		QUnit.test(
+			"has #yourOtherFunction working as expected",
+			function( assert ) {
+				$fixture.defaultPluginName();
+
+				var instance = $fixture.data( "plugin_defaultPluginName" ),
 				expectedText = "foobar";
 
-			instance.yourOtherFunction( expectedText );
-			assert.equal( $fixture.text(), expectedText );
-		}
-	);
+				instance.yourOtherFunction( expectedText );
+				assert.equal( $fixture.text(), expectedText );
+			}
+		);
 
-}( jQuery, QUnit ) );
+	}( jQuery, QUnit ) );
