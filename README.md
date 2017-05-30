@@ -2,7 +2,7 @@
 Demos speak louder than words: [Demo](https://chetanpate1.github.io/parallax-cards/)
 
 ## Motivation
-I was inspired by Apple TVs UI, the way the user can swipe over the remote to shimmer the card that was selected.
+I was inspired by Apple TVs UI (Not the first place I saw this effect), the way the user can swipe over the remote to shimmer the card that was selected.
 This micro animation is subtle but adds so much more depth and user interaction to the web.
 
 ## Usage
@@ -40,7 +40,7 @@ $('.card').parallaxCards(settings);
 ```
 
 ### Settings
-How exteme the rotation
+How exteme the rotation of the card is
 ```javascript
 var settings = {
 	tolerance: 30 //between 5 - 100
